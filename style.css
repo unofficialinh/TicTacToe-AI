@@ -1,0 +1,25 @@
+body{
+    font-family: Loew;
+    font-size: 18px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    height: 80px;
+    width: 80px;
+}
+
+.clicked{
+    background-color: lightblue;
+}
+
+.glyphicon{
+    font-size: 30px;
+}
+
+.noDisplay {
+    display: none
+}
