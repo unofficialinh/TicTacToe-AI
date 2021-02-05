@@ -122,8 +122,8 @@ function play(px, py){
         current_state[px][py] = 'X'
         let id = 4 * px + py
         let box = document.getElementById(id)
-        box.classList.add('clicked')
-        let gly = document.createTextNode('X')
+        box.classList.add('clickedX')
+        let gly = document.createTextNode('✖︎')
         box.appendChild(gly)
         // console.log(current_state)
 
@@ -146,6 +146,7 @@ function play(px, py){
             current_state[x][y] = 'O'
             id = 4 * x + y
             box = document.getElementById(id)
+            box.classList.add('clickedO')
             gly = document.createTextNode('O')
             box.appendChild(gly)
 

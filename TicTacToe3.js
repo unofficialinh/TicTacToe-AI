@@ -119,8 +119,8 @@ function play(px, py){
         current_state[px][py] = 'X'
         let id = 3 * px + py
         let box = document.getElementById(id)
-        box.classList.add('clicked')
-        let gly = document.createTextNode('X')
+        box.classList.add('clickedX')
+        let gly = document.createTextNode('✖︎')
         box.appendChild(gly)
         // console.log(current_state)
 
@@ -135,7 +135,7 @@ function play(px, py){
                 message = "It's a tie!"
             setTimeout(function() {
                 alert(message);
-            },2)
+            },4)
             location.reload()
         }
         else {
@@ -143,6 +143,7 @@ function play(px, py){
             current_state[x][y] = 'O'
             id = 3 * x + y
             box = document.getElementById(id)
+            box.classList.add('clickedO')
             gly = document.createTextNode('O')
             box.appendChild(gly)
 
@@ -157,7 +158,7 @@ function play(px, py){
                     message = "It's a tie!"
                 setTimeout(function() {
                     alert(message);
-                },2)
+                },4)
                 location.reload()
             }
         }

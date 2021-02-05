@@ -10,14 +10,20 @@ table, th, td {
 td {
     height: 80px;
     width: 80px;
+    color: black;
 }
 
-.clicked{
+.clickedX{
+    font-size: 40px;
+    color: steelblue;
     background-color: lightblue;
 }
 
-.glyphicon{
-    font-size: 30px;
+.clickedO{
+    font-size: 40px;
+    font-weight: bold;
+    color: firebrick;
+    background-color: lavenderblush;
 }
 
 .noDisplay {
